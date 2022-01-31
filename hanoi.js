@@ -53,4 +53,4 @@ const writeAll = (pegMap) => {
       pegMap['A'].push(i); // this stacks disks with smallest on top
     }
     writeAll(pegMap);
-  };
+  }; 
