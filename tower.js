@@ -80,10 +80,10 @@ function initializeDisks(pegMap) {
 
 function makeMove() {
   if (counter == 0) {
-    const nDisks = 5;
-   
-    initialize(nDisks, pegMap);
-    moveDisks(nDisks, 'A', 'C', 'B');
+    // const nDisks = 5;
+    var input=document.getElementById('numDisk').value;
+    initialize(input, pegMap);
+    moveDisks(input, 'A', 'C', 'B');
     initializeDisks(pegHist[0]);
   }
   if (counter < pegHist.length) {
